@@ -1,6 +1,5 @@
 from typing import Optional
 
-import rich
 from strawberry import field, type, relay
 from strawberry.types import Info
 
