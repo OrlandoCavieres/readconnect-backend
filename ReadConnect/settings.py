@@ -30,7 +30,9 @@ ALLOWED_HOSTS = ["*"]
 # CORS and CSRF configurations
 CORS_ALLOW_ALL_ORIGINS = True
 
-CSRF_TRUSTED_ORIGINS = ['http://*']
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000', 'http://localhost:8000', 'https://localhost',
+                        'https://readconnectback.sirandokcloud.me', 'http://readconnectback.sirandokcloud.me',
+                        'https://readconnect.sirandokcloud.me', 'http://readconnect.sirandokcloud.me']
 
 
 # Application definition
