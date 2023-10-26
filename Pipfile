@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+cryptography = "*"
+django = "*"
+django-oauth-toolkit = "*"
+django-cors-headers = "*"
+faker = "*"
+gunicorn = "*"
+numpy = "*"
+pillow = "*"
+psycopg = ">3"
+pyjwt = "*"
+python-decouple = "*"
+rich = "*"
+strawberry-graphql-django = "*"
+uvicorn = "*"
+whitenoise = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
