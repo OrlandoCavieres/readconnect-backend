@@ -24,7 +24,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['locahost', 'localhost:3000', '127.0.0.1', 'www.sirandokcloud.me', 'sirandokcloud.me'
+ALLOWED_HOSTS = ['locahost', 'localhost:3000', '127.0.0.1', 'www.sirandokcloud.me', 'sirandokcloud.me',
                  'readconnectback.sirandokcloud.me', 'readconnect.sirandokcloud.me']
 
 
