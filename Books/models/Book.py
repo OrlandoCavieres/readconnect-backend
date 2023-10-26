@@ -15,7 +15,7 @@ class Book(models.Model):
 
     thumbnail = models.URLField()
 
-    short_description = models.CharField(max_length = 200)
+    short_description = models.TextField()
     long_description = models.TextField()
 
     status = models.CharField(max_length = 15)
