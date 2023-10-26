@@ -24,13 +24,16 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['locahost', 'localhost:3000', '127.0.0.1', 'www.sirandokcloud.me', 'sirandokcloud.me',
+ALLOWED_HOSTS = ['localhost', 'localhost:3000', '127.0.0.1', '181.72.71.4',
+                 'www.sirandokcloud.me', 'sirandokcloud.me',
                  'readconnectback.sirandokcloud.me', 'readconnect.sirandokcloud.me']
 
 
 # CORS and CSRF configurations
 
-CSRF_TRUSTED_ORIGINS = ['https://localhost', 'https://readconnectback.sirandokcloud.me', 'http://readconnectback.sirandokcloud.me',
+CSRF_TRUSTED_ORIGINS = ['https://localhost', 'http://localhost', 'http://127.0.0.1', 'https://127.0.0.1',
+                        'https://181.72.71.4', 'http://181.72.71.4',
+                        'https://readconnectback.sirandokcloud.me', 'http://readconnectback.sirandokcloud.me',
                         'https://readconnect.sirandokcloud.me', 'http://readconnect.sirandokcloud.me']
 
 CORS_ALLOWED_ORIGINS = CSRF_TRUSTED_ORIGINS
